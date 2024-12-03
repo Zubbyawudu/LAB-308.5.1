@@ -62,4 +62,14 @@ function stringsLongerThan(arr , minLength) {
 }
 console.log(stringsLongerThan(strings, minLength)); 
 
-// Take a number, n, and print every number between 1 and n without using loops. Use recursion. 
+// Take a number n, and print every number between 1 and n without using loops. Use recursion.
+
+function printedNumber(n ,i = 1) {
+  if (i <= n){
+    console.log(i);
+    printedNumber(n, i + 1)
+  }
+  
+}
+printedNumber(10)
+
